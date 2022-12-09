@@ -1,0 +1,7 @@
+flask
+pymongo
+mongodb
+jinja
+passlib
+uuid
+python

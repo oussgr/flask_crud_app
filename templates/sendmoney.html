@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="card-wrapper">
+  <div class="card">
+      <h1 class="center">Send Money</h1>
+
+      <form name="sendmoney_form"  action="{{ url_for('update_money') }}" method="POST">
+
+        
+
+        <label for="email">Email</label>
+        <input type="email" name="email" class="field" required>
+
+        <label for="number">Old Password</label>
+        <input type="number" name="moneytogive" class="field" required>
+
+        
+
+        <p class="error error--hidden"></p>
+
+        <input type="submit" value="givemoney" class="btn">
+
+        <div class="center">
+          <a href="/dashboard/" class="btn btn--secondary">Back</a>
+        </div>
+      
+      </form>
+  
+  
+  </div>
+</div>
+  
+{% endblock %}
