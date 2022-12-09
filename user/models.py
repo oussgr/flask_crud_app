@@ -122,7 +122,7 @@ class User:
                 db.users.update_one({'email': session['user']['email']}, {'$set': mainuser}) #update the giving user
                 db.users.update_one({'email': email}, {'$set': newuser}) #update the gifted user
 
-                return redirect('/dashboard/')
+                return redirect('/')
             else:
                 
                 return redirect('/sendmoney/')
